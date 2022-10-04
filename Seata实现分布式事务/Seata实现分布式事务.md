@@ -919,10 +919,7 @@ import com.falcon.springcloud.alibaba.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-/**
- * @auther zzyy
- * @create 2019-12-11 16:55
- */
+
 @RestController
 public class OrderController {
 
@@ -950,10 +947,7 @@ package com.falcon.springcloud.alibaba.config;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.context.annotation.Configuration;
 
-/**
- * @auther zzyy
- * @create 2019-12-11 16:57
- */
+
 @Configuration
 @MapperScan({"com.falcon.springcloud.alibaba.dao"})
 public class MyBatisConfig {
@@ -1019,10 +1013,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.context.annotation.ComponentScan;
 
-/**
- * @auther zzyy
- * @create 2019-12-11 17:02
- */
+
 @EnableDiscoveryClient
 @EnableFeignClients
 @SpringBootApplication(exclude = DataSourceAutoConfiguration.class)//取消数据源的自动创建
@@ -1290,10 +1281,6 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-/**
- * @auther zzyy
- * @create 2019-12-11 16:41
- */
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -2015,10 +2002,6 @@ import javax.annotation.Resource;
 import java.math.BigDecimal;
 import java.util.concurrent.TimeUnit;
 
-/**
- * 账户业务实现类
- * Created by zzyy on 2019/11/11.
- */
 @Service
 public class AccountServiceImpl implements AccountService {
 
@@ -2086,10 +2069,6 @@ package com.falcon.springcloud.alibaba.config;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.context.annotation.Configuration;
 
-/**
- * @auther zzyy
- * @create 2019-12-11 16:57
- */
 @Configuration
 @MapperScan({"com.falcon.springcloud.alibaba.dao"})
 public class MyBatisConfig {
@@ -2112,11 +2091,6 @@ import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 
 import javax.sql.DataSource;
 
-/**
- * @auther zzyy
- * @create 2019-12-11 16:58
- * 使用Seata对数据源进行代理
- */
 @Configuration
 public class DataSourceProxyConfig {
 
